@@ -1,16 +1,12 @@
 #!/bin/bash
-# Open initial output.
-# Prefer konsole if its there, otherwise fall back to xterminal.
-#tty -s; if [ $? -ne 0 ]; then
-#	if command -v konsole &>/dev/null; then
-#		konsole -e "$0"; exit;
-#		else
-#		xterm -e "$0"; exit;
-#	fi
-#fi
 
 cd "$( dirname "${BASH_SOURCE[0]}" )"
 RAWSVG="src/cursors.svg"
+BUILDDIR="build"
+if [ $1 ]; then
+	RAWSVG=src/nevergrove-$1.svg
+	BUILDDIR=build/nevergrove-$1
+fi
 INDEX="src/index.theme"
 ALIASES="src/cursorList"
 
@@ -37,13 +33,14 @@ if  ! type "xcursorgen" > /dev/null ; then
 fi
 echo -e "Checking Requirements... DONE"
 
-SCALES="50 75 100 125 150 175 200 225 250 275 300"
+SCALES="5" #"50 75 100 125 150 175 200 225 250 275 300"
 
 echo -ne "Making Folders... $BASENAME\\r"
-OUTPUT="$(grep --only-matching --perl-regex "(?<=Name\=).*$" $INDEX)"
+THEMENAME=${1^}
+OUTPUT=Breeze-Nevergrove-$THEMENAME
 OUTPUT=${OUTPUT// /_}
 for scale in $SCALES; do
-	mkdir -p "build/x$scale"
+	mkdir -p "$BUILDDIR/x$scale"
 done
 mkdir -p "$OUTPUT/cursors"
 echo 'Making Folders... DONE';
@@ -58,7 +55,7 @@ for CUR in src/config/*.cursor; do
 	echo -ne "\033[0KGenerating simple cursor pixmaps... $BASENAME\\r"
 
 	for scale in $SCALES; do
-		DIR="build/x$scale"
+		DIR="$BUILDDIR/x$scale"
 		if [ "$DIR/$BASENAME.png" -ot $RAWSVG ] ; then
 			inkscape $RAWSVG -i $BASENAME -w $((32*$scale/100)) -h $((32*$scale/100)) -o "$DIR/$BASENAME.png" > /dev/null
 		fi
@@ -73,8 +70,8 @@ do
 	echo -ne "\033[0KGenerating animated cursor pixmaps... $i / 23 \\r"
 
 	for scale in $SCALES; do
-		DIR="build/x$scale"
-		
+		DIR="$BUILDDIR/x$scale"
+
 		if [ "$DIR/progress-$i.png" -ot $RAWSVG ] ; then
 			inkscape $RAWSVG -i progress-$i -w $((32*$scale/100)) -h $((32*$scale/100)) -o "$DIR/progress-$i.png" > /dev/null
 		fi
@@ -95,8 +92,8 @@ for CUR in src/config/*.cursor; do
 	BASENAME=${BASENAME%.*}
 
 	TMP_CUR="tmp.cursor"
-	./scale_cursor $CUR $SCALES > $TMP_CUR
-	ERR="$( xcursorgen -p build "$TMP_CUR" "$OUTPUT/cursors/$BASENAME" 2>&1 )"
+	./scale_cursor.py $CUR $SCALES > $TMP_CUR
+	ERR="$( xcursorgen -p $BUILDDIR "$TMP_CUR" "$OUTPUT/cursors/$BASENAME" 2>&1 )"
 	rm $TMP_CUR
 
 	if [[ "$?" -ne "0" ]]; then
@@ -125,6 +122,7 @@ echo -e "\033[0KGenerating shortcuts... DONE"
 echo -ne "Copying Theme Index...\\r"
 	if ! [ -e "$OUTPUT/$INDEX" ] ; then
 		cp $INDEX "$OUTPUT/index.theme"
+		sed -i "s/\$NAME/Breeze Nevergrove $THEMENAME/" $OUTPUT/index.theme
 	fi
 echo -e "\033[0KCopying Theme Index... DONE"
 
