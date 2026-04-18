@@ -3,9 +3,9 @@
 generate () {
 	echo "Generating $1..."
 	if ./build.sh ${1,}; then
-		echo "$1 done!\n"
+		echo -e "$1 done!\n"
 	else
-		echo "$1 failed :(\n"
+		echo -e "$1 failed :(\n"
 	fi
 }
 
@@ -13,3 +13,4 @@ generate Aspen
 generate Eucalyptus
 generate Jacaranda
 generate Maple
+generate Neutral

@@ -33,7 +33,7 @@ if  ! type "xcursorgen" > /dev/null ; then
 fi
 echo -e "Checking Requirements... DONE"
 
-SCALES="5" #"50 75 100 125 150 175 200 225 250 275 300"
+SCALES="50 75 100 125 150 175 200 225 250 275 300"
 
 echo -ne "Making Folders... $BASENAME\\r"
 THEMENAME=${1^}

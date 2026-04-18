@@ -1,5 +1,5 @@
 <h3 align="center">
-	<img src="https://raw.githubusercontent.com/IcaroJam/nevergrove/refs/heads/dev/imgs/logo.png" width="128" />
+	<img src="https://raw.githubusercontent.com/IcaroJam/nevergrove/refs/heads/master/imgs/logo.png" width="128" />
 	<br>
 	Nevergrove Breeze 6 Cursors
 </h3>
@@ -11,7 +11,25 @@
 </h6>
 <br>
 
-### From the original README
+## Variants
+Nevergrove comes in four distinct variants. This cursor theme adds a neutral fifth, for those who want their cursors in a more classic black and white flavour.
+### Maple
+![](https://raw.githubusercontent.com/IcaroJam/nevergrove/refs/heads/master/imgs/breeze/maple.png)
+### Aspen
+![](https://raw.githubusercontent.com/IcaroJam/nevergrove/refs/heads/master/imgs/breeze/aspen.png)
+### Eucalyptus
+![](https://raw.githubusercontent.com/IcaroJam/nevergrove/refs/heads/master/imgs/breeze/eucalyptus.png)
+### Jacaranda
+![](https://raw.githubusercontent.com/IcaroJam/nevergrove/refs/heads/master/imgs/breeze/jacaranda.png)
+### Neutral
+![](https://raw.githubusercontent.com/IcaroJam/nevergrove/refs/heads/master/imgs/breeze/neutral.png)
+
+## Installation
+Simply copy the folder of the variant you want to install into one of the following directories:
+- `/usr/share/icons` for global installation (this requires root priviledges)
+- `~/.local/share/icons` or `~/.icons` for local, user-based installation
+
+## From the original README
 Building the Bridge Icon set from the Inkscape SVG:
 
 1. Ensure you have inkscape and xcursorgen installed.

@@ -24,9 +24,9 @@
    borderopacity="1.0"
    inkscape:pageopacity="0"
    inkscape:pageshadow="2"
-   inkscape:zoom="2.820221"
-   inkscape:cx="379.2256"
-   inkscape:cy="100.52404"
+   inkscape:zoom="3.9883948"
+   inkscape:cx="21.938651"
+   inkscape:cy="277.93136"
    inkscape:document-units="px"
    inkscape:current-layer="layer1"
    showgrid="true"
@@ -58,6 +58,12 @@
   </sodipodi:namedview>
   <defs
    id="defs11026"><linearGradient
+   id="swatch76"
+   inkscape:swatch="solid"
+   inkscape:label="expoBg"><stop
+     style="stop-color:#443836;stop-opacity:1;"
+     offset="0"
+     id="stop76" /></linearGradient><linearGradient
    id="swatch71"
    inkscape:swatch="solid"
    inkscape:label="windowServer"><stop
@@ -867,7 +873,15 @@
    x1="23"
    y1="754.1803"
    x2="36.378632"
-   y2="754.1803" /></defs>
+   y2="754.1803" /><linearGradient
+   inkscape:collect="always"
+   xlink:href="#swatch76"
+   id="linearGradient76"
+   x1="8"
+   y1="885.36218"
+   x2="520"
+   y2="885.36218"
+   gradientUnits="userSpaceOnUse" /></defs>
   <metadata
    id="metadata11029">
     <rdf:RDF>
@@ -923,10 +937,25 @@
    y="741.36218"
    inkscape:label="l" />
     </g>
+    
+    
+    
+    
+    
     <g
-   id="g35512"
-   inkscape:label="row1"
-   sodipodi:insensitive="true">
+   id="expo"
+   inkscape:label="expo"><rect
+     style="display:inline;fill:url(#linearGradient76);stroke-width:3.77953;stroke-linecap:square;stroke-miterlimit:10;paint-order:stroke fill markers;fill-opacity:1"
+     id="rect1"
+     width="512"
+     height="312"
+     x="8"
+     y="729.36218"
+     rx="4"
+     ry="4" /><g
+     id="g35512"
+     inkscape:label="row1"
+     sodipodi:insensitive="true">
       <g
    id="g13204"
    inkscape:label="default">
@@ -1217,12 +1246,11 @@
      cy="961.86218"
      r="2.5000007"
      inkscape:label="highlight" /></g>
-    </g>
-    <g
-   id="g14438"
-   inkscape:label="row2"
-   style="display:inline"
-   sodipodi:insensitive="true">
+    </g><g
+     id="g14438"
+     inkscape:label="row2"
+     style="display:inline"
+     sodipodi:insensitive="true">
       <g
    id="g36470"
    inkscape:label="pointer"
@@ -1531,11 +1559,10 @@
    inkscape:label="outline-alt"
    d="m 23.929688,744.11213 c -0.1203,-8.3e-4 -0.243092,0.023 -0.361329,0.0723 -0.315793,0.1301 -0.525973,0.4155 -0.568359,0.73047 l 0.002,16.4961 c 0.04419,0.5114 0.473197,0.91211 0.996094,0.91211 0.105348,0 0.207374,-0.0167 0.302734,-0.0469 l 3.076172,-1.27344 1.697266,2.26954 c 0.593407,0.86027 1.725932,1.21883 2.730469,0.80273 1.004534,-0.4161 1.550025,-1.47015 1.361328,-2.49805 l -0.402344,-2.80468 3.074219,-1.2754 c 0.0887,-0.0461 0.173547,-0.10518 0.248047,-0.17968 0.369697,-0.3698 0.388996,-0.95671 0.05859,-1.34961 L 24.482422,744.30158 c -0.157931,-0.12047 -0.352237,-0.18808 -0.552734,-0.18945 z M 24,745.23518 l 11.300781,11.29492 -3.61914,1.12109 0.326171,3.53711 c -0.0018,0.5814 -0.359194,1.07936 -0.865234,1.28906 -0.506137,0.2095 -1.11098,0.10912 -1.523437,-0.30078 l -2.271485,-2.73047 -3.351562,1.76563 z" />
       </g>
-    </g>
-    <g
-   id="g2324"
-   inkscape:label="row3"
-   sodipodi:insensitive="true">
+    </g><g
+     id="g2324"
+     inkscape:label="row3"
+     sodipodi:insensitive="true">
       <g
    id="g16656"
    inkscape:label="draft"
@@ -1763,12 +1790,11 @@
    style="fill:url(#linearGradient73);fill-opacity:1;stroke:none"
    inkscape:label="symbol (w)" />
       </g>
-    </g>
-    <g
-   id="g2323"
-   inkscape:label="row4"
-   style="display:inline"
-   sodipodi:insensitive="true">
+    </g><g
+     id="g2323"
+     inkscape:label="row4"
+     style="display:inline"
+     sodipodi:insensitive="true">
       <g
    id="g1283"
    inkscape:label="text"
@@ -1939,11 +1965,10 @@
    inkscape:connector-curvature="0"
    inkscape:label="foreground" />
       </g>
-    </g>
-    <g
-   id="g19952"
-   inkscape:label="row5"
-   sodipodi:insensitive="true">
+    </g><g
+     id="g19952"
+     inkscape:label="row5"
+     sodipodi:insensitive="true">
       <g
    id="g7684"
    inkscape:label="size_ver"
@@ -2172,11 +2197,10 @@
    inkscape:label="top-gradient"
    d="m 342.5,953.62585 c -0.25,0 -0.5,0.25 -0.5,0.75 v 9 h 1 v -9 c 0,-0.5 -0.25,-0.75 -0.5,-0.75 z" />
       </g>
-    </g>
-    <g
-   id="g46951"
-   inkscape:label="row6"
-   sodipodi:insensitive="true">
+    </g><g
+     id="g46951"
+     inkscape:label="row6"
+     sodipodi:insensitive="true">
       
       
       <g
@@ -2608,7 +2632,7 @@
    style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:Sans;-inkscape-font-specification:Sans;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;text-anchor:start;display:inline;overflow:visible;visibility:visible;fill:url(#linearGradient1);fill-opacity:1;stroke:none;stroke-width:1px;marker:none;enable-background:accumulate"
    inkscape:label="foreground"
    d="m 40.500236,1002.6562 -3,5.75 h 2.25 v 3 a 0.75,0.75 0 0 0 0.75,0.75 0.75,0.75 0 0 0 0.75,-0.75 0.75,0.75 0 0 0 0,-0.037 v -2.9629 h 2.25 z" /></g>
-      </g></g>
+      </g></g></g>
     <g
    id="g48403"
    inkscape:label="row-wait"
